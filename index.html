@@ -1,68 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
+<title>Adriel Angeles Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,400,700,900' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+
 <body>
-        <div class="container">
-                <div class="jumbotron jumbotron-fluid">
-                        <div class="container">
-                          <h1 class="display-4">Adriel Angeles</h1>
-                          <p class="lead">So Stalking my web page are you?</p>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-sidebar" id="myNavbar">
+            <a class="w3-bar-item button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-home fa-2x"></i>
+            </a>
+            <a href="#portfolio" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-th fa-2x"></i>
+            </a>
+            <a href="#about" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-user fa-2x"></i>
+            </a>
+            <a href="#contact" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#home" class="w3-bar-item button" onclick="toggleFunction()">HOME</a>
+            <a href="#portfolio" class="w3-bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#contact" class="w3-bar-item button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle title" style="white-space:nowrap;">
+            <span class="w3-center w3-black w3-xlarge w3-wide">
+                <span class="w3-hide-small">HELLO, I'M</span>
+                <span> ADRIEL ANGELES.</span>
+                <br>
+                <span class="w3-hide-small"> FULL STACK WEB DEVELOPER</span>
+            </span>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class=" w3-container w3-padding-64" id="portfolio">
+        <div class="section bg1"></div>
+        <br>
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center">
+            <em>Here are some of my latest projects.
+        </p>
+        <br>
+        <!-- Responsive Grid. Three columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/Psychic.png" alt="Psychic-Game">
+                            <h2 class="card__title">Psychic-Game</h2>
+                            <p class="card__text">Personal Project, Had fun creating a game, Guess a letter and my app will let you know if you guess it right within 9 guesses. </p>
+                            <a class="card__btn" href="https://adrielangeles.github.io/Psychic-Game/" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/AdrielAngeles/Psychic-Game" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                <div class="card"> 
+                        <img class="card__img" src="assets/pictures/TrainTime.png" alt="Train-Schedule">
+                        <h2 class="card__title">Train-Schedule</h2>
+                        <p class="card__text">This app focuses to calculate when the next train will arrive; this should be relative to the current time. </p>
+                        <a  class="card__btn" href="https://adrielangeles.github.io/Train-Schedule/" target="_blank" class="">Demo</a>
+                        <a class="card__btn" href="https://github.com/AdrielAngeles/Train-Schedule" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                      </div>
+            </div>
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/Crystal.png" alt="Unit-4-Game">
+                            <h2 class="card__title">Unit-4-Game</h2>
+                            <p class="card__text">In this game you are given a random number, you click on the crystals and try to figure out what values they all have and try to get to the number that is given.</p>
+                            <a class="card__btn" href="https://adrielangeles.github.io/Unit-4-Game/" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/AdrielAngeles/Unit-4-Game" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/Project1.png" alt="Project1">
+                            <h2 class="card__title">Project-01</h2>
+                            <p class="card__text">Our app consists of a webpage that will help you find a trail using api's to get a comfortable price to your next getaway.</p>
+                            <a class="card__btn" href="https://stvnwslybwmnjr.github.io/Project-01/" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/AdrielAngeles/Project-01" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/GameOn.png" alt="GameOn">
+                            <h2 class="card__title">Project-02</h2>
+                            <p class="card__text">Our website is a mock up of a search engine that also combines the rating of a given game.</p>
+                            <a class="card__btn" href="https://game-on3.herokuapp.com/" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/AdrielAngeles/project-2" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                <div class="card"> 
+                        <img class="card__img" src="assets/pictures/Plaid.png" alt="Bank App">
+                        <h2 class="card__title">final-project-bankapp</h2>
+                        <p class="card__text">Using Plaid api we collaborated into making a simulation of a bank app that is mobile friendly.</p>
+                        <a class="card__btn" href="" class="" target="_blank" disabled>Not Currently Hosted</a>
+                        <a class="card__btn" href="https://github.com/AdrielAngeles/final-project-bankapp" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                      </div>
+            </div>
+        </div>
+    </div>
+    <!--Tech Icons-->
+    <div class="w3-row w3-center bg1 w3-padding-16">
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/html.svg">
+            <img class="icon" src="assets/icons/css.svg">
+            <img class="icon" src="assets/icons/javascript.svg">
+            <img class="icon" src="assets/icons/jquery.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/sass.svg">
+            <img class="icon" src="assets/icons/react.svg">
+            <img class="icon" src="assets/icons/node.svg">
+            <img class="icon" src="assets/icons/express.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/handlebars.svg">
+            <img class="icon" src="assets/icons/mongodb.svg">
+            <img class="icon" src="assets/icons/mysql.svg">
+            <img class="icon" src="assets/icons/github.svg">
+        </div>
+    </div>
+    <!-- Second Parallax Image with About Text -->
+    <div class="bgimg bgimg-2 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">Adriel Angeles</h3>
+        <div class="w3-row">
+            <div class="u-margin-top-medium">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <div class="profile__section-left">
+                        <div class="image-responsive">
+                            <img class="w3-image image-responsive__picture" src="assets/pictures/20200401_202645.jpg" alt="Photo of Me" width="500" height="333">
+                            <div class="image-responsive__overlay">
+                                <h2></h2>
+                                <p class="image-responsive__overlay--set1">
+                                    <a href="https://www.linkedin.com/in/adriel-angeles-68a6a219b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://github.com/AdrielAngeles" target="_blank"><i class="fa fa-github"></i></a>
+                                </p>
+                                <hr>
+                                <hr>
+                                <p class="image-responsive__overlay--set2">
+                                    <a href="https://codepen.io/adrielangeles" target="_blank"><i class="fa fa-codepen"></i></a>
+                                    <a href="https://stackoverflow.com/users/13193309/adrielangeles" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+                                </p>
+                            </div>
                         </div>
-                      </div>
-            
-            <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            My Net Worth
-                          </button>
-                        </h2>
-                      </div>
-
-</div>
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-$0006.23                      </div>
                     </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Personal Information
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-Why Are you looking here you stalker...                       </div>
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="profile__section-right">
+                        <div class="text-box">
+                            <div class="text-box__section text-box__section-default">
+                                <h4 class="text-box__section--title">Constantly Curious, Consistently Coding</h4>
+                                <div  class="text-box__section--content">
+                                    <p>
+                                        Always looking for new challenges and tirelessly honing my craft, I'm a full stack developer with an eye for detail and a
+                                        mind for solutions. My background is diverse. From growing up in Arizona and
+                                        going to school for Medical School at The Universiy of Arizona, working as a Bricklayer in scorching heat of Arizona,
+                                         and now pursuing
+                                        the future in tech and it's immeasurable opportunity to shape society. I have had
+                                        the honor to work with and learn from great developers and I can't wait to tackle
+                                        what's next.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">Why Tech?</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My love of code stems from my life long passion for building. I grew up renovating homes, working on cars, and fixing the
+                                        things that are broken. I've never found anything more satisfying and I'll always
+                                        have a little of that blue collar streak.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">My Skills</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My skillset consists of HTML, CSS, Sass, Javascript, jQuery, React, Redux, NodeJS, Handlebars, MySQL, and MongoDB. Currently exploring
+                                        Java along side with Python and building several personal projects so I can hone my skill in the art of coding.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-My Social Security Number                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-342-90-2321 </div>
-                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONTACT INFO</h3>
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+               
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phoenix AZ, US
+                    <br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (602) 570-6294
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: adrielangeles0107@gmail.com
+                    <br>
+                </div>
+                <p>Let's get  a cup of
+                    <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form id="contact-form" method="POST" action="https://formspree.io/mwknkowg">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
                     </div>
-                  </div>
+                    <input class="w3-input w3-border" type="text" name="message" placeholder="Message" required name="Message">
+                    <button class="button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                    <input type="hidden" name="_next" value="AdrielAngeles.github.io" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <div class="w3-xlarge w3-section">
+            <a href="https://github.com/AdrielAngeles" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://stackoverflow.com/users/13193309/adrielangeles" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
+            <a href="https://codepen.io/adrielangeles" target="_blank"><i class="fa fa-codepen w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/adriel-angeles-68a6a219b/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <div>Adriel Angeles &copy;</div>
+    </footer>
 
-
-
-              </div>  
+    <script type="text/javascript" src="js/logic.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmNX29rk_tbFqoDWIyYCg5TglI2OP8Xnk&callback=myMap"></script> -->
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "adriel-angeles-portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "adrielangeles"
+  },
+  "author": "Adriel Angeles",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "npm": "^6.2.0"
+  }
+}
